@@ -42,7 +42,6 @@ export class AppController {
     return this.authService.login(req.user);
   }
 
-
   @UseGuards(JwtAuthGuard)
   @Get('me')
   async me(@Request() req) {

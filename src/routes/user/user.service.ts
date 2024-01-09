@@ -53,7 +53,7 @@ export class UserService {
     };
 
     const accessToken = jwt.sign(payload, 'secret_key', {
-      expiresIn: '1h'
+      expiresIn: '1h',
     });
 
     return {

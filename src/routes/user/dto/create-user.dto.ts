@@ -1,8 +1,4 @@
-import {
-  IsNotEmpty,
-  MaxLength,
-  MinLength,
-} from 'class-validator';
+import { IsNotEmpty, MaxLength, MinLength } from 'class-validator';
 
 export class CreateUserDto {
   @MinLength(8)
